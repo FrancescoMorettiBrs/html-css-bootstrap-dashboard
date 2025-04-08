@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Bootstrap</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" ">
+      <div class="container-fluid">
+        <img class="img-fluid" width="60px" height="60px" src="./img/duck.png" alt="" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#">Hidden brand</a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="d-flex justify-content-between py-4 px-2">
+                <h2>Catalogo libri</h2>
+                <button type="button" class="btn btn-primary">Aggiungi libro</button>
+              </div>
+              <div class="col-12">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Titolo</th>
+                      <th scope="col" class="d-none">Data prestito</th>
+                      <th scope="col">Stato</th>
+                      <th scope="col">Azioni</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row">I pilastri della terra</td>
+                      <td class="d-none">Mark</td>
+                      <td>
+                        <button type="button" class="btn btn-success py-0">Disponibile</button>
+                      </td>
+                      <div>
+                        <td>
+                          <div class="d-flex gap-1">
+                            <button type="button" class="btn btn-outline-secondary" disabled>
+                              <i class="fa-solid fa-pen"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary" disabled>
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </div>
+                        </td>
+                      </div>
+                    </tr>
+                    <tr>
+                      <td scope="row">I promessi sposi</td>
+                      <td class="d-none">Jacob</td>
+                      <td>
+                        <button type="button" class="btn btn-success py-0">Disponibile</button>
+                      </td>
+                      <td>
+                        <div class="d-flex gap-1">
+                          <button type="button" class="btn btn-outline-secondary" disabled>
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary" disabled>
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Il signore degli anelli</td>
+                      <td class="d-none">Jacob</td>
+                      <td>
+                        <button type="button" class="btn btn-warning py-0 text-white">In prestito</button>
+                      </td>
+                      <td>
+                        <div class="d-flex gap-1">
+                          <button type="button" class="btn btn-outline-secondary" disabled>
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary" disabled>
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Harry Potter e la pietra</td>
+                      <td class="d-none">Jacob</td>
+                      <td>
+                        <button type="button" class="btn btn-success py-0">Disponibile</button>
+                      </td>
+                      <td>
+                        <div class="d-flex gap-1">
+                          <button type="button" class="btn btn-outline-secondary" disabled>
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary" disabled>
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Il codice Da Vinci</td>
+                      <td class="d-none">Jacob</td>
+                      <td>
+                        <button type="button" class="btn btn-danger py-0">Non disponibile</button>
+                      </td>
+                      <td>
+                        <div class="d-flex gap-1">
+                          <button type="button" class="btn btn-outline-secondary" disabled>
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary" disabled>
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Shining</td>
+                      <td class="d-none">Jacob</td>
+                      <td>
+                        <button type="button" class="btn btn-success py-0">Disponibile</button>
+                      </td>
+                      <td>
+                        <div class="d-flex gap-1">
+                          <button type="button" class="btn btn-outline-secondary" disabled>
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary" disabled>
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">La Divina Commedia</td>
+                      <td class="d-none">Jacob</td>
+                      <td>
+                        <button type="button" class="btn btn-warning py-0 text-white">In prestito</button>
+                      </td>
+                      <td>
+                        <div class="d-flex gap-1">
+                          <button type="button" class="btn btn-outline-secondary" disabled>
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary" disabled>
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Il trono di spade</td>
+                      <td class="d-none">Jacob</td>
+                      <td>
+                        <button type="button" class="btn btn-success py-0">Disponibile</button>
+                      </td>
+                      <td>
+                        <div class="d-flex gap-1">
+                          <button type="button" class="btn btn-outline-secondary" disabled>
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary" disabled>
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Il mondo di sofia</td>
+                      <td class="d-none">Jacob</td>
+                      <td>
+                        <button type="button" class="btn btn-danger py-0">Non disponibile</button>
+                      </td>
+                      <td>
+                        <div class="d-flex gap-1">
+                          <button type="button" class="btn btn-outline-secondary" disabled>
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary" disabled>
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Le cronache di Narnia: il leone, la strega e l'armadio</td>
+                      <td class="d-none d-md-table-cell">Jacob</td>
+                      <td>
+                        <button type="button" class="btn btn-warning py-0 text-white">In prestito</button>
+                      </td>
+                      <td>
+                        <div class="d-flex gap-1">
+                          <button type="button" class="btn btn-outline-secondary" disabled>
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary" disabled>
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Il piccolo principe</td>
+                      <td class="d-none">Jacob</td>
+                      <td>
+                        <button type="button" class="btn btn-success py-0">Disponibile</button>
+                      </td>
+                      <td>
+                        <div class="d-flex gap-1">
+                          <button type="button" class="btn btn-outline-secondary" disabled>
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary" disabled>
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">La storia infinita</td>
+                      <td class="d-none">Jacob</td>
+                      <td>
+                        <button type="button" class="btn btn-success py-0">Disponibile</button>
+                      </td>
+                      <td>
+                        <div class="d-flex gap-1">
+                          <button type="button" class="btn btn-outline-secondary" disabled>
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary" disabled>
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card mb-4">
+                <h4 class="card-header">Todo</h4>
+                <div class="card-body">
+                  <div class="card">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="checkbox1" />
+                          <label class="form-check-label" for="checkbox1"> Chiamare segreteria </label>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="checkbox1" />
+                          <label class="form-check-label" for="checkbox1"> Mandare avvisi prestiti scaduti </label>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="checkbox1" />
+                          <label class="form-check-label" for="checkbox1"> Ordinare nuovi libri </label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="mb-0">F.A.Q.</h5>
+                </div>
+                <div class="accordion" id="faqAccordion">
+                  <div class="accordion-item">
+                    <span class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed">Come aggiungere un nuovo libro?</button>
+                    </span>
+                  </div>
+                  <div class="accordion-item">
+                    <span class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed">Come posso accedere all'anagrafica utenti?</button>
+                    </span>
+                  </div>
+                  <div class="accordion-item">
+                    <span class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed">Posso usare questa dashboard da mobile?</button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
